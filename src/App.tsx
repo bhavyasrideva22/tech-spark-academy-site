@@ -11,6 +11,8 @@ import Corporate from "./pages/Corporate";
 import Leaderboard from "./pages/Leaderboard";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
+import BlogCategory from "./pages/BlogCategory";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +29,8 @@ const App = () => (
           <Route path="/hackathons" element={<Hackathons />} />
           <Route path="/corporate" element={<Corporate />} />
           <Route path="/leaderboard" element={<Leaderboard />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/category/:category" element={<BlogCategory />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
